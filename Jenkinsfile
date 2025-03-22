@@ -32,7 +32,7 @@ pipeline {
         		script {
                     if (isUnix()) {
                         sh 'docker tag discovery-server:latest localhost:5000/discovery-server'
-                    else {
+                    } else {
                         bat 'docker tag discovery-server:latest localhost:5000/discovery-server'
                     }
                 }
